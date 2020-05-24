@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">ListView</string>
+
+    <string-array name="data_menu">
+        <item>Intel Core i3 9100F</item>
+        <item>Intel Pentium G5400</item>
+        <item>Intel Core i3 8100</item>
+        <item>Intel Core i9 9900K</item>
+        <item>Intel Core i5 9400F</item>
+    </string-array>
+    <string-array name="data_deskripsi">
+        <item>Intel Core i3-9100F hadir dengan fabrikasi 14nm seperti jajaran prosesor Intel Core Generasi ke-9. Prosesor ini dalam paket penjualannya hadir dengan CPU fan cooler bawaan dari Intel yang dikenal memiliki bentuk sangat sederhana.</item>
+        <item>Intel Pentium Gold G5400 merupakan salah satu seri prosesor terbaru dari Intel generasi ke-8, dimana ia bisa menjadi pilihan optimal bagi mereka yang ingin membangun sebuah gaming rig dengan anggaran yang benar-benar terbatas.</item>
+        <item>Kehadiran prosesor Intel Core i3-8100 Coffee Lake benar-benar layak untuk dipertimbangkan, apa yang terbaik dari prosesor ini adalah kekuatan quad core yang kini sudah melengkapi barisan ini, sehingga ia bisa memberikan sesuatu yang jauh lebih baik lagi untuk urusan multi-thread.</item>
+        <item>Saat dirilis pada akhir 2018, Intel Core i9-9900K sempat diklaim oleh Intel sebagai prosesor tercepat yang dibutuhkan oleh gamer dan kreator konten. Meskipun begitu, prosesor ini dibuat tidak dengan teknologi yang benar-benar baru.  Misalnya, Intel Core i9-9900K diciptakan dengan fabrikasi 14nm dan belum 10nm.</item>
+        <item>Prosesor core i5-9400F adalah salah satu varian prosesor generasi ke-9 dari Intel. Prosesor core i5-9400F ini telah dirilis pada awal tahun 2019 yang merupakan serial prosesor tanpa memiliki iGP. Dengan kata lain prosesor core i5-9400F ini merupakan prosesor ekonomis yang dapat menjangkau lebih banyak pengguna.</item>
+    </string-array>
+    <array name="data_gambar">
+        <item>@drawable/i39100f</item>
+        <item>@drawable/pentium</item>
+        <item>@drawable/i38100</item>
+        <item>@drawable/i99900k</item>
+        <item>@drawable/i59400f</item>
+    </array>
+    <string-array name="data_spesifikasi">
+        <item>Product                   : 9th Generation Intel Core i3\n
+              Code Name                 : Coffee Lake\n
+              Lithography               : 14nm\n
+              # of Cores                : 4\n
+              # of Threads              : 4\n
+              Processor Base Frequency  : 3.60 GHz\n
+              Max Turbo Frequency       : 4.20 GHz\n
+              Cache                     : 6 MB Intel Smart Cache\n
+              Bus Speed                 : 8 GT/s\n
+              TDP                       : 65 W\n
+              Max Memory Size           : 64 GB\n
+              Memory Types              : DDR4-2400\n
+              Sockets Supported         : FCLGA1151\n
+        </item>
+        <item>Product Collection        : Seri Prosesor Intel Pentium Gold\n
+              Code Name                 : Coffee Lake\n
+              Lithography               : 14nm\n
+              # of Cores                : 2\n
+              # of Threads              : 4\n
+              Processor Base Frequency  : 3.70 GHz\n
+              Cache                     : 4 MB Intel Smart Cache\n
+              Bus Speed                 : 8 GT/s\n
+              TDP                       : 58 W\n
+              Max Memory Size           : 64 GB\n
+              Memory Types              : DDR4-2400\n
+              Sockets Supported         : FCLGA1151\n
+              Grafis Prosesor           : Intel UHD Graphics 610\n
+        </item>
+        <item>Product Collection        : Prosesor Intel Core i3 Generasi ke-8\n
+              Code Name                 : Coffee Lake\n
+              Lithography               : 14nm\n
+              # of Cores                : 4\n
+              # of Threads              : 4\n
+              Processor Base Frequency  : 3.60 GHz\n
+              Cache                     : 6 MB Intel Smart Cache\n
+              Bus Speed                 : 8 GT/s\n
+              TDP                       : 65 W\n
+              Max Memory Size           : 64 GB\n
+              Memory Types              : DDR4-2400\n
+              Sockets Supported         : FCLGA1151\n
+              Grafis Prosesor           : Intel UHD Graphics 630\n
+        </item>
+        <item>Product Collection        : Prosesor Intel Core i9 Generasi ke-9\n
+              Code Name                 : Coffee Lake\n
+              Lithography               : 14nm\n
+              # of Cores                : 8\n
+              # of Threads              : 16\n
+              Processor Base Frequency  : 3.60 GHz\n
+              Max Turbo Frequency       : 5.00 GHz\n
+              Cache                     : 16 MB Intel Smart Cache\n
+              Bus Speed                 : 8 GT/s\n
+              TDP                       : 95W \n
+              Max Memory Size           : 128 GB\n
+              Memory Types              : DDR4-2666\n
+              Sockets Supported         : FCLGA1151\n
+              Grafis Prosesor           : Intel UHD Graphics 630\n
+        </item>
+        <item>Product Collection        : Prosesor Intel Core i5 Generasi ke-9\n
+              Code Name                 : Coffee Lake\n
+              Lithography               : 14nm\n
+              # of Cores                : 6\n
+              # of Threads              : 6\n
+              Processor Base Frequency  : 2.90 GHz\n
+              Max Turbo Frequency       : 4.10 GHz\n
+              Cache                     : 9 MB Intel Smart Cache\n
+              Bus Speed                 : 8 GT/s\n
+              TDP                       : 65 W\n
+              Max Memory Size           : 128 GB\n
+              Memory Types              : DDR4-2666\n
+              Sockets Supported         : FCLGA1151\n
+        </item>
+    </string-array>
+    <string-array name="data_harga">
+        <item>Rp 1.258.000</item>
+        <item>Rp 800.000</item>
+        <item>Rp 1.700.000</item>
+        <item>Rp 7.000.000</item>
+        <item>Rp 2.200.000</item>
+    </string-array>
+</resources>

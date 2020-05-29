@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder> {
+public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder>{
     private Context context;
     private ArrayList<Menu> menus;
 
@@ -50,7 +50,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         return menus.size();
     }
 
-    private class MenuViewHolder extends RecyclerView.ViewHolder{
+    public class MenuViewHolder extends RecyclerView.ViewHolder{
         private TextView tvnama;
         private TextView tvharga;
         private ImageView gambar;

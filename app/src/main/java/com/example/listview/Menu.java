@@ -1,17 +1,17 @@
 package com.example.listview;
 
 class Menu {
-    private int gambar;
+    private String gambar;
     private String nama;
     private String Deskripsi;
     private String spesifikasi;
     private String harga;
 
-    public int getGambar() {
+    public String getGambar() {
         return gambar;
     }
 
-    public void setGambar(int gambar) {
+    public void setGambar(String gambar) {
         this.gambar = gambar;
     }
 

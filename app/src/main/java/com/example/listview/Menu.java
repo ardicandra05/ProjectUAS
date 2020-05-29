@@ -7,11 +7,9 @@ class Menu {
     private String spesifikasi;
     private String harga;
 
-    public Menu(String datagambar, String datanama, String datadesk, String dataspek, String dataharga){
+    public Menu(String datagambar, String datanama, String dataharga){
         gambar=datagambar;
         nama=datanama;
-        Deskripsi=datadesk;
-        spesifikasi=dataspek;
         harga=dataharga;
     }
 

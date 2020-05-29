@@ -17,9 +17,9 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     private Context context;
     private ArrayList<Menu> menus;
 
-    public MenuAdapter(Context mcontext, ArrayList<Menu> menumakanan) {
+    public MenuAdapter(Context mcontext, ArrayList<Menu> menubarang) {
         context=mcontext;
-        menus=menumakanan;
+        menus=menubarang;
     }
 
     @NonNull

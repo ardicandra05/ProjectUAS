@@ -49,25 +49,11 @@ public class MainActivity extends AppCompatActivity {
         parseJSON();
     }
 
-//        ListView lvlist=findViewById(R.id.lv_list);
-//        adapter=new MenuAdapter(this);
-//        lvlist.setAdapter(adapter);
-//        prepare();
-//        tambahitem();
-//
-//        lvlist.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Toast.makeText(MainActivity.this, menus.get(i).getNama(), Toast.LENGTH_SHORT).show();
-//                Intent pindahdata=new Intent(MainActivity.this,DetailActivity.class);
-//                pindahdata.putExtra(DetailActivity.dataDeskripsi,menus.get(i).getDeskripsi());
-//                pindahdata.putExtra(DetailActivity.datagambar,menus.get(i).getGambar());
-//                pindahdata.putExtra(DetailActivity.dataSpesifikasi,menus.get(i).getSpesifikasi());
-//                pindahdata.putExtra(DetailActivity.dataHarga,menus.get(i).getHarga());
-//                startActivity(pindahdata);
-//            }
-//        });
-//    }
+    public void Pindah(View view){
+        Intent pindah=new Intent(MainActivity.this,DetailActivity.class);
+        pindah.putExtra("Menu", menus);
+        startActivity(pindah);
+    }
 
     private void parseJSON(){
         String url="https://uassemesterpendek.000webhostapp.com/koneksi.php";
@@ -81,7 +67,9 @@ public class MainActivity extends AppCompatActivity {
                         String gambarmenu = data.getString("gambar");
                         String namamenu = data.getString("nama");
                         String hargamenu = data.getString("harga");
-                        menus.add(new Menu(gambarmenu, namamenu, hargamenu));
+                        String desmenu = data.getString("deskripsi");
+                        String spekmenu = data.getString("spek");
+                        menus.add(new Menu(gambarmenu, namamenu, hargamenu, desmenu, spekmenu));
                     }
                     menuAdapter = new MenuAdapter(MainActivity.this, menus);
                     recyclerView.setAdapter(menuAdapter);

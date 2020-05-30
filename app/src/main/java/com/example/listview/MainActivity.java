@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Pindah(View view){
         Intent pindah=new Intent(MainActivity.this,DetailActivity.class);
-        pindah.putExtra("Menu", menus);
+
         startActivity(pindah);
     }
 

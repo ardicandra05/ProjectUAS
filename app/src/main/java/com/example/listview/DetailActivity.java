@@ -41,6 +41,7 @@ public class DetailActivity extends AppCompatActivity {
                 .with(this)
                 .load(gambar)
                 .into(produkimg);
+
         produkdesk.setText(desk);
         produkharga.setText(harga);
         produknama.setText(nama);

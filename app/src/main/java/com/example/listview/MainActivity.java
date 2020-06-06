@@ -5,14 +5,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.content.res.TypedArray;
+//import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
+//import android.view.View;
+//import android.widget.Adapter;
+//import android.widget.AdapterView;
+//import android.widget.ArrayAdapter;
+//import android.widget.ListView;
+//import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements MenuAdapter.OnIte
     public static final String dtdesk="deskripsi";
     public static final String dtspek="spek";
 
-    // private String [] dataList={"Intel Core i3 9100F","Intel Pentium G5400","Intel Core i3 8100","Intel Core i9 9900K","Intel Core i5 9400F"};
     private MenuAdapter menuAdapter;
     private RecyclerView recyclerView;
     int jumdata;

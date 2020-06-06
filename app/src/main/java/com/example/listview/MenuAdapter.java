@@ -59,10 +59,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     }
 
     public class MenuViewHolder extends RecyclerView.ViewHolder{
-        private TextView tvnama;
-        private TextView tvharga;
-        private ImageView gambar;
-        private Button btnpesan;
+        public TextView tvnama;
+        public TextView tvharga;
+        public ImageView gambar;
+        public Button btnpesan;
 
         public MenuViewHolder (@NonNull View view){
             super(view);

@@ -1,0 +1,1 @@
+# ProjectUAS melanjutkan project UTS list menu penjualan processor di android studio dengan mengimplementasikan recycleview, glide, dan cardview. Yang dimana databasenya diambil dalam database webservice di www.000hosting.com menggunakan JSON.

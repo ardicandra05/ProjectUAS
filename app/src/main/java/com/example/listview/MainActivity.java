@@ -27,7 +27,12 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MenuAdapter.OnItemClickListener{
+    public static final String dtgambar="gambar";
+    public static final String dtnama="nama";
+    public static final String dtharga="harga";
+    public static final String dtdesk="deskripsi";
+    public static final String dtspek="spek";
 
     // private String [] dataList={"Intel Core i3 9100F","Intel Pentium G5400","Intel Core i3 8100","Intel Core i9 9900K","Intel Core i5 9400F"};
     private MenuAdapter menuAdapter;
@@ -49,12 +54,6 @@ public class MainActivity extends AppCompatActivity {
         parseJSON();
     }
 
-    public void Pindah(View view){
-        Intent pindah=new Intent(MainActivity.this,DetailActivity.class);
-
-        startActivity(pindah);
-    }
-
     private void parseJSON(){
         String url="https://uassemesterpendek.000webhostapp.com/koneksi.php";
         JsonArrayRequest request=new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
@@ -73,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     menuAdapter = new MenuAdapter(MainActivity.this, menus);
                     recyclerView.setAdapter(menuAdapter);
+                    menuAdapter.setOnItemClickListener(MainActivity.this);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -84,6 +84,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         requestQueue.add(request);
+    }
+
+    @Override
+    public void onItemclick(int position) {
+        Intent pindah=new Intent(this,DetailActivity.class);
+        Menu itemClick=menus.get(position);
+        pindah.putExtra(dtgambar,itemClick.getGambar());
+        pindah.putExtra(dtnama,itemClick.getNama());
+        pindah.putExtra(dtdesk,itemClick.getDeskripsi());
+        pindah.putExtra(dtharga,itemClick.getHarga());
+        pindah.putExtra(dtspek,itemClick.getSpesifikasi());
+
+        startActivity(pindah);
     }
 }
 

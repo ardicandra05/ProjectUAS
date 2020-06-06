@@ -1,7 +1,7 @@
 package com.example.listview;
 
-import android.os.Parcel;
-import android.os.Parcelable;
+//import android.os.Parcel;
+//import android.os.Parcelable;
 
 class Menu {
     private String gambar;

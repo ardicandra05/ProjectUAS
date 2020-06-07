@@ -6,14 +6,14 @@ package com.example.listview;
 class Menu {
     private String gambar;
     private String nama;
-    private String Deskripsi;
+    private String deskripsi;
     private String spesifikasi;
     private String harga;
 
     public Menu(String datagambar, String datanama, String  datades, String dataspek, String dataharga){
         gambar=datagambar;
         nama=datanama;
-        Deskripsi=datades;
+        deskripsi=datades;
         spesifikasi=dataspek;
         harga=dataharga;
     }
@@ -27,7 +27,7 @@ class Menu {
     }
 
     public String getDeskripsi() {
-        return Deskripsi;
+        return deskripsi;
     }
 
     public String getSpesifikasi() {

@@ -5,15 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-//import android.content.res.TypedArray;
 import android.os.Bundle;
-//import android.view.View;
-//import android.widget.Adapter;
-//import android.widget.AdapterView;
-//import android.widget.ArrayAdapter;
-//import android.widget.ListView;
-//import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -71,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements MenuAdapter.OnIte
                     }
                     menuAdapter = new MenuAdapter(MainActivity.this, menus);
                     recyclerView.setAdapter(menuAdapter);
+
                     menuAdapter.setOnItemClickListener(MainActivity.this);
                 } catch (JSONException e) {
                     e.printStackTrace();

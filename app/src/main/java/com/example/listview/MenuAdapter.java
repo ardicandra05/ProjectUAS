@@ -40,7 +40,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     @Override
     public void onBindViewHolder(@NonNull MenuViewHolder holder, int position) {
         Menu menubaru=menus.get(position);
-        String gambar=menubaru.getGambar();
+        String gambarbaru=menubaru.getGambar();
         String harga=menubaru.getHarga();
         String nama=menubaru.getNama();
 
@@ -48,7 +48,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         holder.tvharga.setText(harga);
         Glide
                 .with(context)
-                .load(gambar)
+                .load(gambarbaru)
                 .centerCrop()
                 .into(holder.gambar);
     }
@@ -66,7 +66,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
 
         public MenuViewHolder (@NonNull View view){
             super(view);
-            tvnama=view.findViewById(R.id.tv_menu);
+            tvnama=view.findViewById(R.id.tv_nama);
             tvharga=view.findViewById(R.id.tv_harga);
             gambar=view.findViewById(R.id.img_menu);
             btnpesan=view.findViewById(R.id.btn_pesan);
